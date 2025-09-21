@@ -1,13 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage("Checkout") {
-            steps {
-                bat "dir"
-                git branch:'main', url: 'https://github.com/wieczoreksdev/course3-jenkins-gs-spring-petclinic'
-                bat "dir"    
-            }
-        }
+        // stage("Checkout") {
+        //     steps {
+        //         bat "dir"
+        //         git branch:'main', url: 'https://github.com/wieczoreksdev/course3-jenkins-gs-spring-petclinic'
+        //         bat "dir"    
+        //     }
+        // }
     
         stage("Build") {
             steps {
